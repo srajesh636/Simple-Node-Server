@@ -8,8 +8,8 @@ const server = http.createServer((req, res) => {
 
 server.listen(port, (error) => {
   error ? console.log(chalk.red('Compilation failed !'))
-    : console.group()
-  console.log('compiled successfully !')
-  console.log(chalk.cyan(`\n Running on port ${port} `))
-  console.groupEnd()
+    : 
+  console.log('\nCompiled successfully !')
+  console.log(chalk.yellow('\nYour Server is :'))
+  console.log(chalk.cyan(`Running on port ${port} `))
 })
