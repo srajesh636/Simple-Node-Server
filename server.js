@@ -1,6 +1,7 @@
 const chalk = require('chalk')
 const http = require('http')
-const port = 8080
+const port = process.env.PORT || 8080
+
 const server = http.createServer((req, res) => {
   res.write('A Simple Server created using Node !')
   res.end()
